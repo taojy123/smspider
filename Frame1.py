@@ -24,7 +24,7 @@ class SpiderThread(threading.Thread):
         mobiles = mself.textCtrl1.GetValue()
         startdate = mself.textCtrl3.GetValue()
         enddate = mself.textCtrl4.GetValue()
-        mobiles = mobiles.split("\n")[:10]
+        mobiles = mobiles.split("\n")
         for mobile in mobiles:
             try:
                 rnum = get_rnum(mobile, startdate, enddate)
